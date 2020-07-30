@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" src="style.css" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="./images/drawers.jpg" class='drawer'></img>
+    </div>
+
+    <div class="content">
+      <div class="top">
+        <h3>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h3>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it felt
+          slightly bare and uninviting. I’ve got some simple tips to help you make
+          any room feel complete.
+        </p>
+      </div>
+      <div class="bottom">
+        <span><img src="images\avatar-michelle.jpg" class='avatar'></span>
+        <span class='data'>
+          <p class='name'>Michelle Appleton</p>
+          <p>28 Jun 2020 </p>
+        </span>
+        <span id="icon" class="icon" onclick="popUp()">
+          <div id="popup" class="popup invisible">
+            SHARE
+            <img src="images/icon-facebook.svg">
+            <img src="images/icon-twitter.svg">
+            <img src="images/icon-pinterest.svg">
+            <span class="icon icon-mob">
+              <img src="images\icon-share.svg" class='share share-mob'>
+            </span>
+          </div>
+          <img id='logo' src="images\icon-share.svg" class='share'>
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="https://github.com/ADROITAKASH">Akash</a>.
+  </div>
+</body>
+
+<script>
+  var icon = document.getElementById("icon");
+  var popup = document.getElementById("popup");
+  var logo = document.getElementById("logo");
+  var click = false;
+
+  function popUp() {
+    click = !click;
+    if (click) {
+      popup.className = 'popup';
+      icon.className = 'icon color';
+      logo.src = 'images\\icon-share-white.svg';
+
+    } else {
+      popup.className = 'popup invisible';
+      icon.className = 'icon';
+      logo.src = 'images\\icon-share.svg';
+    }
+  }
+</script>
+
+</html>
