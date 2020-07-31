@@ -42,7 +42,7 @@
           any room feel complete.
         </p>
       </div>
-      <div class="bottom">
+      <div id='bottom' class="bottom">
         <span><img src="images\avatar-michelle.jpg" class='avatar'></span>
         <span class='data'>
           <p class='name'>Michelle Appleton</p>
@@ -78,6 +78,7 @@
   var icon = document.getElementById("icon");
   var popup = document.getElementById("popup");
   var logo = document.getElementById("logo");
+  // var bottom = document.getElementById('bottom');
   var click = false;
 
   function popUp() {
@@ -85,6 +86,7 @@
     if (click) {
       popup.className = 'popup';
       icon.className = 'icon color';
+      // bottom.className = 'bottom hidden';
       logo.src = 'images\\icon-share-white.svg';
 
     } else {

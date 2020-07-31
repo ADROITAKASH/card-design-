@@ -195,6 +195,18 @@ p {
     background-color: white;
   }
 
+  .top {
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    top: 0;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+
+
+  }
+
   h3 {
     font-size: 17px;
   }
@@ -204,6 +216,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    padding: 5%;
+    padding-bottom: 1%;
+
     /* margin-bottom: -50px; */
   }
 
