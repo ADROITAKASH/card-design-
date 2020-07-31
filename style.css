@@ -232,6 +232,11 @@ p {
     justify-content: space-around;
   }
 
+  .popup:before {
+    content: "";
+    display: none;
+  }
+
   .icon-mob {
     display: block;
     margin-left: 40px;
